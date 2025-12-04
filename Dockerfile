@@ -3,10 +3,10 @@ FROM rrojano/spring-boot
 WORKDIR /app
 
 # COPIAR EL POM DESDE EL DIRECTORIO ACTUAL
-COPY pom.xml .
+COPY SaludarDatos/pom.xml .
 
 # COPIAR LA CARPETA SRC DESDE EL DIRECTORIO ACTUAL
-COPY src ./src
+COPY SaludarDatos/src ./src
 
 # COMPILAR
 RUN mvn package -DskipTests
